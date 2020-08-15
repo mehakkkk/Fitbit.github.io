@@ -1,62 +1,239 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Save the Paws</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105987818-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
 
-        gtag('config', 'UA-105987818-2');
-    </script>
+    <!-- Font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
-
-    <title>Pulse Watch -- Fitbit heart rate data exporter and visualizer</title>
-    <meta name="description" content="Export and download Fitbit heart rate data to a .csv file.  Visualize your heart rate data for any time period">
 </head>
 
-<body class="text-center">
+<body>
 
-    <main role="main" class="inner cover mb-1">
-        <h1 class="cover-heading display-4">Pulse Watch</h1>
-        <h3 class="h3">Visualize and export to .csv your Fitbit heart rate data</h3>
-        <p class="lead">Click on the link below and sign in to the Fitbit login page. Then, grant permission for this application
-            to access your data</p>
-        <p class="lead">
-            <a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22CJTT&redirect_uri=https%3A%2F%2Ficcir919.github.io%2FpulseWatch%2Fpublic%2Fdashboard.html&scope=heartrate%20profile&expires_in=604800"
-                class=" btn btn-lg btn-primary ">Sign into Fitbit</a>
-        </p>
-        <p> Pulse Watch is secure, does not store any of your data, and is made with love by
-            <a href="https://neilricci.github.io/ ">Neil</a>
-        </p>
-    </main>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
-    <nav class="author-text justify-content-center navbar fixed-bottom navbar-dark bg-dark ">
+    <div id="top" class="s-wrap site-wrapper">
 
-    </nav>
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="index.html">
+                        <h2 style="color: white;">Save the <i class="fa fa-paw"></i></h2>
+                    </a>
+                </div>
+
+                <div class="header__search">
+    
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="header__search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="header__search-submit" value="Search">
+                    </form>
+        
+                    <a href="#0" title="Close Search" class="header__search-close">Close</a>
+        
+                </div>  <!-- end header__search -->
+
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="index.html" title="">Home</a></li>
+                   
+                    <li><a href="page-blog.html" title="">Blog</a></li>
+                    <li><a href="page-about.html" title="">About</a></li>
+                    <li><a href="page-contact.html" title="">Contact</a></li>
+                </ul> <!-- end header__nav -->
+
+                <ul class="header__social">
+                    <li class="ss-facebook">
+                        <a href="https://facebook.com/">
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="ss-twitter">
+                        <a href="#0">
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="ss-dribbble">
+                        <a href="#0">
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                    <li class="ss-pinterest">
+                        <a href="#0">
+                            <span class="screen-reader-text">Behance</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> <!-- end header__nav-wrap -->
+
+            
+
+        </header> <!-- end s-header -->
+
+        <div class="s-content">
+            
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+    
+                    <div class="grid-sizer"></div>
+    
+                    <article class="masonry__brick entry format-standard animate-this">
+                            
+                        <div class="entry__thumb">
+                            <a href="single-standard.html" class="entry__thumb-link">
+                                <img src="images/thumbs/blog/blog-image.png" >
+                            </a>
+                        </div>
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="single-standard.html" id="title">Just a Standard Format Post.</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-date">
+                                        <a href="single-standard.html">Apr 29, 2019</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="entry__excerpt">
+                                <p id="blog">
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                                </p>
+                            </div>
+                        </div>
+        
+                    </article> <!-- end article -->
+     
+                    
+    
+                    <article class="masonry__brick entry format-standard animate-this">
+    
+                        <div class="entry__thumb">
+                            <a href="single-standard.html" class="entry__thumb-link">
+                                <img src="images/thumbs/blog/blog-image.png" >
+                            </a>
+                        </div>
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <h2 class="entry__title"><a href="single-standard.html">Don't buy Adopt!</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-date">
+                                        <a href="single-standard.html">Apr 23, 2019</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                                </p>
+                            </div>
+                        </div>
+    
+                    </article> <!-- end article -->
+    
+                    <article class="masonry__brick entry format-standard animate-this">
+    
+                        <div class="entry__thumb">
+                            <a href="single-standard.html" class="entry__thumb-link">
+                                <img src="images/thumbs/blog/blog-image.png" ></a>
+                        </div>
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <h2 class="entry__title"><a href="single-standard.html">Dogs</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-date">
+                                        <a href="single-standard.html">Apr 23, 2019</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                                </p>
+                            </div>
+                        </div>
+                        
+    
+                    </article> <!-- end article -->
+    
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-        crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
-        crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
-        crossorigin="anonymous "></script>
+        </div> <!-- end s-content -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>© Copyright Typerite 2019</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        console.log(JSON.parse(localStorage.getItem("blogs")).length);
+        var blogs = JSON.parse(localStorage.getItem("blogs"));
+        document.getElementById("title").innerHTML = blogs[blogs.length - 1].title;
+        document.getElementById("blog").innerHTML = blogs[blogs.length - 1].content;
+
+    </script>
 </body>
-
-</html>

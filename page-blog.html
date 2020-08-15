@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Contact - Typerite</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="index.html">
+                        <h2 style="color: white;">Save the <i class="fa fa-paw"></i></h2>
+                    </a>
+                </div>
+
+                <div class="header__search">
+    
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="header__search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="header__search-submit" value="Search">
+                    </form>
+        
+                    <a href="#0" title="Close Search" class="header__search-close">Close</a>
+        
+                </div>  <!-- end header__search -->
+
+                <!-- toggles -->
+                <a href="#0" class="header__search-trigger"></a>
+                <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="index.html" title="">Home</a></li>
+                   
+                    <li class="has-children">
+                        <a href="page-blog.html" title="">Blog Posts</a>   
+                    </li>
+                    <li><a href="page-about.html" title="">About</a></li>
+                    <li><a href="page-contact.html" title="">Contact</a></li>
+                </ul> <!-- end header__nav -->
+
+                <ul class="header__social">
+                    <li class="ss-facebook">
+                        <a href="https://facebook.com/">
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="ss-twitter">
+                        <a href="#0">
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="ss-dribbble">
+                        <a href="#0">
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                    <li class="ss-pinterest">
+                        <a href="#0">
+                            <span class="screen-reader-text">Behance</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> <!-- end header__nav-wrap -->
+        </header>  <!-- end s-header -->
+
+        <div class="content__page-header">
+            <h1 class="display-1">
+            Hello, Write your own blog.
+            </h1>
+        </div> 
+        
+        
+        <form name="BlogForm" id="BlogForm" method="post" autocomplete="off" style="margin-left: 400px;width: 700px;" >
+            <fieldset>
+
+                <div class="form-field">
+                    <input name="bName" id="bName" class="full-width" placeholder="Your Name" value=""  type="text" required>
+                </div>
+
+                <div class="form-field">
+                    <input name="bEmail" id="bEmail" class="full-width" placeholder="Your Email" value="" type="text">
+                </div>
+
+                <div class="form-field">
+                    <input name="bTitle" id="bTitle" class="full-width" placeholder="Blog Title" value="" type="text" required>
+                </div>
+
+                <div class="message form-field">
+                    <textarea name="bBlog" id="bBlog" class="full-width" placeholder="Your Blog here" value="" required></textarea>
+                </div>
+
+                <input type="button"  onclick="display()" id="submit_blog" class="btn btn--primary btn-wide btn--large full-width"  value="Publish blog" >
+
+            </fieldset>
+        </form>
+          
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>© Copyright 2020</span> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // blog submission
+        var obj=[];
+        
+        var btn = document.getElementById("submit_blog");
+        //btn.onclick=display;
+        function display(){
+            let bName = document.getElementById("bName").value;
+            let bEmail = document.getElementById("bEmail").value;
+            let bTitle = document.getElementById("bTitle").value;
+            let bBlog = document.getElementById("bBlog").value;
+
+            if(bName != "" || bEmail != ""){
+                obj.push({"name":bName,"email":bEmail,"title":bTitle,"content":bBlog});
+                alert("Blog Added Successfully!");
+                document.getElementById("bName").value = document.getElementById("bEmail").value = document.getElementById("bTitle").value = document.getElementById("bBlog").value = ""
+                localStorage.setItem("blogs", JSON.stringify(obj));
+            }
+            else{
+                alert("Please Fill All the fields");
+            }
+            //console.log(JSON.parse(localStorage.getItem("blogs")));
+        }
+    </script>
+  
+</body>
